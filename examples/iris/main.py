@@ -2,7 +2,7 @@ from annhub_python import PyAnn
 
 pyann = PyAnn()
 
-pyann.set_model("D:\ARI\ANSCENTER\TrainedModel_c++.ann")
+pyann.set_model(".\TrainedModel_c++.ann")
 
 pyann.set_model_id(5122020)
 
