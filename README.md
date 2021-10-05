@@ -30,7 +30,7 @@ app.set_model_id(5122020)
 app.set_input_length(4)
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = 8080, debug = False)
+    app.run()
 
 ```
 ## API 
@@ -47,11 +47,13 @@ POST: /api/v1/predict
 
 In this example, we illustrate how to develop a server by using AI model powered by ANNHUB with only few steps. You can use this [link](examples/iris) to access our code.
 The procedure of using our library to server AI model is as follows:
-<ol>
-<li> Put a trained model into your project folder.</li>
-<li> Create main.py file, where some key information will be determined such as model path, model id, input length,... </li>
-<li> Create Dockerfile to containerize your application. (We recommend to reuse our Dockerfile).</li>
-<li> Create docker-compose.yml file, which will construct your docker container by a simple command line. (We also recommend to use as our instruction)</li>
-<li> Run your application be a simple command line: docker-compose up -d </li>
-<li> With default settings, your AI can be used at [http://localhost:8080](http://localhost:8080). You can access [http://localhost:8080/docs](http://localhost:8080/docs) to use your Swagger UI documentation. </li>
 
+ 1. Put a trained model into your project folder.
+ 2. Create main.py file, where some key information will be determined such as model path, model id, input length,... 
+ 3. Create Dockerfile to containerize your application. (We recommend to reuse our [Dockerfile](examples/iris/Dockerfile)).
+ 4. Create docker-compose.yml file, which will construct your docker container by a simple command line. (We also recommend to use as our [instruction](examples/iris/docker-compose.yml))
+ 5. Run your application be a simple command line: 
+ ```
+ docker-compose up -d
+ ``` 
+ 6. With default settings, your AI can be used at [http://localhost:8080](http://localhost:8080). You can access [http://localhost:8080/docs](http://localhost:8080/docs) to use your Swagger UI documentation. 
