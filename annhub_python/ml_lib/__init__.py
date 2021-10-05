@@ -6,6 +6,9 @@ def download():
     file_name = "annhub.pyd"
     with open(file_name,'wb') as f:
         f.write(response.content)
+        
+# As the .pyd can not be uploaded into PyPi, we need to download it first before it can be
+# injected to our project        
 download()
 
 from . import annhub as annhub
