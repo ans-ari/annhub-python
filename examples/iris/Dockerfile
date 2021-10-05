@@ -4,10 +4,9 @@ ENV PYTHONUNBUFFERED 1
 
 EXPOSE 8080
 WORKDIR /app
-COPY requirements.txt ./
 
 RUN py -m pip install --upgrade pip 
-RUN py -m pip install -r requirements.txt
+RUN py -m pip install annhub-python
 
 COPY . ./
 ENTRYPOINT ["python", "app/main.py"]

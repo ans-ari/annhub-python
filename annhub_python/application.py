@@ -40,11 +40,9 @@ class PyAnn(FastAPI):
                 "A model path must be provided."
             )
 
-        elif not os.path.isabs(model_path):
-            raise ValueError(
-                "If a model path is provided, it must be absolute. "
-                "A relative path was given instead."
-            )
+        elif not os.path.exists(model_path):
+            message = f"Machine learning model at {self._model_path} not exists!"
+            raise FileNotFoundError(message)
 
         self._model_path = model_path
 
@@ -128,7 +126,7 @@ class PyAnn(FastAPI):
     def run(
         self,
         host: str = "0.0.0.0",
-        port: int = 8000,
+        port: int = 8080,
         debug: Optional[bool] = None
      ) -> None:
         """ Run the application on a local development server
@@ -138,7 +136,7 @@ class PyAnn(FastAPI):
             Defaults to "0.0.0.0".
 
             port (int, optional): [the port of the web server].
-            Defaults to 8000.
+            Defaults to 8080.
 
             debug (bool, optional): [if given, enable or disasble debug mode].
             Defaults to False.
