@@ -1,4 +1,4 @@
-from annhub_python.annhub_python.core.errors import ModelLoadException, PredictException
+from annhub_python.core.errors import ModelLoadException, PredictException
 from annhub_python.core.errors import InvalidInputException
 from annhub_python.services.predict import MachineLearningModel
 from annhub_python.model.prediction import HealthResponse, MachineLearningReponse

@@ -40,7 +40,7 @@ class PyAnn(FastAPI):
                 "A model path must be provided."
             )
 
-        elif not os.path.exists(model_path):
+        elif os.path.exists(model_path):
             message = f"Machine learning model at {self._model_path} not exists!"
             raise FileNotFoundError(message)
 
