@@ -53,7 +53,8 @@ The procedure of using our library to server AI model is as follows:
  3. Create Dockerfile to containerize your application. (We recommend to reuse our [Dockerfile](examples/iris/Dockerfile)).
  4. Create docker-compose.yml file, which will construct your docker container by a simple command line. (We also recommend to use as our [instruction](examples/iris/docker-compose.yml))
  5. Run your application be a simple command line: 
- ```
- docker-compose up -d
+ `
+ docker-compose up -d --build app
+
  ``` 
  6. With default settings, your AI can be used at [http://localhost:8080](http://localhost:8080). You can access [http://localhost:8080/docs](http://localhost:8080/docs) to use your Swagger UI documentation. 

@@ -8,5 +8,6 @@ WORKDIR /app
 RUN py -m pip install --upgrade pip 
 RUN py -m pip install annhub-python
 
-COPY . ./
-ENTRYPOINT ["python", "app/main.py"]
+COPY . .
+
+ENTRYPOINT ["python", "main.py"]
