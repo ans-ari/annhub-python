@@ -6,6 +6,9 @@ Main backend module, which is used for developing web-app logic and deploying AI
 # Usage
 
 We develop a RESTful web controller into a reusable library between many AI models. With these functionalities: **Input model**, **Define data input**, **logging**, **exception handler**.
+## Prerequisite
+You should install python 3.7 64bit to run the model from ANSCENTER.
+https://www.python.org/downloads/release/python-3710/
 
 ## Installing
 Delivering and versioning as a [PyPi](https://pypi.org/) package.
