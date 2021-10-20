@@ -1,0 +1,2 @@
+2021-10-20 12:12:34.834 | INFO     | annhub_python.services.predict:predict:76 - Input: [3.5, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 59.99], Output: [248592.51205560952]
+2021-10-20 12:12:43.954 | INFO     | annhub_python.services.predict:predict:76 - Input: [3.5, 1.0, 1.0, 1.0, 0.0, 1.0, 10.0, 1.0, 59.99], Output: [7427.423495750027]

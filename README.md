@@ -6,6 +6,9 @@ Main backend module, which is used for developing web-app logic and deploying AI
 # Usage
 
 We develop a RESTful web controller into a reusable library between many AI models. With these functionalities: **Input model**, **Define data input**, **logging**, **exception handler**.
+## Prerequisite
+You should install python 3.7 64bit to run the model from ANSCENTER.
+https://www.python.org/downloads/release/python-3710/
 
 ## Installing
 Delivering and versioning as a [PyPi](https://pypi.org/) package.
@@ -53,7 +56,8 @@ The procedure of using our library to server AI model is as follows:
  3. Create Dockerfile to containerize your application. (We recommend to reuse our [Dockerfile](examples/iris/Dockerfile)).
  4. Create docker-compose.yml file, which will construct your docker container by a simple command line. (We also recommend to use as our [instruction](examples/iris/docker-compose.yml))
  5. Run your application be a simple command line: 
- `
+
+ ```
  docker-compose up -d --build app
 
  ``` 
