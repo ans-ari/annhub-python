@@ -112,3 +112,4 @@ $ docker pull anscenterari/iris-ari
 ```
 $ docker run -d -p 8080:8080 <your image tag>
 ```
+
