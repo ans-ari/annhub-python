@@ -125,7 +125,7 @@ class PyAnn(FastAPI):
 
     def run(
         self,
-        host: str = "0.0.0.0",
+        host: str = "localhost",
         port: int = 8080,
         debug: Optional[bool] = None
      ) -> None:
@@ -133,7 +133,7 @@ class PyAnn(FastAPI):
 
         Args:
             host (str, optional): [the hostname to listen on].
-            Defaults to "0.0.0.0".
+            Defaults to "localhost".
 
             port (int, optional): [the port of the web server].
             Defaults to 8080.
